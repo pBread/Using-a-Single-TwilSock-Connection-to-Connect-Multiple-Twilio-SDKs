@@ -2,11 +2,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import * as Twilio from "twilio";
 
-type Data = {
-  identity: string;
-  jwt: string;
-};
-
 const {
   TWILIO_ACCOUNT_SID,
   TWILIO_API_KEY,
@@ -18,7 +13,7 @@ const {
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<{ identity: string; jwt: string }>
 ) {
   const identity = "user@example.com";
 
