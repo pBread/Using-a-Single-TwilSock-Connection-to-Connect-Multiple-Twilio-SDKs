@@ -1,13 +1,4 @@
 {
-  "name": "twilsock",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
@@ -21,5 +12,14 @@
     "twilio": "^4.17.0",
     "twilsock": "^0.13.5",
     "typescript": "5.2.2"
-  }
+  },
+  "name": "twilsock",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "version": "0.1.0"
 }
