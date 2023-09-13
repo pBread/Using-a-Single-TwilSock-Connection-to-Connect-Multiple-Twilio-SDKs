@@ -23,4 +23,14 @@ Log into your Twilio Console, copy the Account SID on the home page, and add it 
 1. (Create an API key in the Twilio Console)[https://www.twilio.com/console/runtime/api-keys] or via the (Twilio REST API)[https://www.twilio.com/docs/iam/keys/api-key]
 2. Add API Key & Secret to .env
 
+### Create Conversation Service & Sync Service
+
+This demo will need a Conversation Service and Sync Service. You can create these yourself then then add the CONVERSATION_SVC_SID & SYNC_SVC_SID to the .env file.
+
+Or, you can simply run this script, which will do it for you.
+
+```bash
+node run ./scripts/create-services.js
+```
+
 ###
